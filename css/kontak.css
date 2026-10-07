@@ -20,7 +20,7 @@ body {
     min-width: 320px;
     margin: 0;
     color: var(--ink);
-    background: var(--paper);
+    background: var(--white);
     font-family: var(--body);
     -webkit-font-smoothing: antialiased;
 }
