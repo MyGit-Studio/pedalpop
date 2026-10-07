@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8faf3">
+    <meta name="description" content="Pilih sepeda PedalPOP yang cocok untuk rute dan perjalananmu.">
+    <title>Pilih Sepeda — PedalPOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pilihsepeda.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="PedalPOP, beranda">
+            <img class="brand-logo" src="img/logo.png" alt="">
+            <span class="brand-name">Pedal<span>POP</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+            <i data-lucide="menu"></i>
+        </button>
+        <nav class="main-nav" aria-label="Navigasi utama">
+            <a class="nav-link" href="index.html">Beranda</a>
+            <a class="nav-link active" href="pilihsepeda.html" aria-current="page">Pilih sepeda</a>
+            <a class="nav-link" href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+    <button class="menu-backdrop" type="button" aria-label="Tutup menu" hidden></button>
+
+    <main class="catalog-main">
+        <section class="catalog-intro" aria-labelledby="page-title">
+            <div class="intro-copy">
+                <a class="back-link" href="index.html"><i data-lucide="arrow-left"></i> Beranda</a>
+                <p class="eyebrow"><span></span> GARASI PEDALPOP</p>
+                <h1 id="page-title">Pilih sepeda,<br><span>tentukan arah.</span></h1>
+                <p class="intro-description">Dari putaran santai sampai rute yang lebih jauh, temukan teman jalan yang pas buatmu.</p>
+            </div>
+            <div class="intro-aside">
+                <span class="aside-icon"><i data-lucide="map"></i></span>
+                <p><strong>Rencana hari ini?</strong><br>Sepeda yang tepat bikin perjalanan terasa lebih ringan.</p>
+                <span class="aside-route">JAKARTA <i data-lucide="move-right"></i> KE MANA SAJA</span>
+            </div>
+        </section>
+
+        <section class="bike-catalog" aria-labelledby="catalog-title">
+            <div class="catalog-toolbar">
+                <div>
+                    <p class="section-label">TEMUKAN RITMEMU</p>
+                    <h2 id="catalog-title">Sepeda tersedia <span>03</span></h2>
+                </div>
+                <div class="category-filters" role="group" aria-label="Filter kategori sepeda">
+                    <button class="filter-button is-active" type="button" data-filter="semua" aria-pressed="true">Semua <span>3</span></button>
+                    <button class="filter-button" type="button" data-filter="santai" aria-pressed="false">Santai</button>
+                    <button class="filter-button" type="button" data-filter="kota" aria-pressed="false">Kota</button>
+                    <button class="filter-button" type="button" data-filter="sport" aria-pressed="false">Sport</button>
+                </div>
+            </div>
+
+            <div class="bike-grid">
+                <article class="bike-card" data-category="santai">
+                    <div class="bike-photo photo-mint">
+                        <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=1000&q=85" alt="City Cruiser, sepeda santai untuk jalan-jalan" loading="lazy">
+                        <span class="bike-number">01 / 03</span>
+                        <span class="photo-tag"><i data-lucide="sun"></i> SANTAI</span>
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-heading">
+                            <div><p class="bike-type">CITY BIKE</p><h3>City Cruiser</h3></div>
+                            <span class="bike-rating"><i data-lucide="star"></i> 4.9</span>
+                        </div>
+                        <p class="bike-description">Posisi duduk nyaman untuk menyusuri taman dan jalan kota dengan santai.</p>
+                        <div class="bike-specs"><span><i data-lucide="gauge"></i> 7 kecepatan</span><span><i data-lucide="armchair"></i> Posisi tegak</span></div>
+                        <div class="bike-footer">
+                            <p class="bike-price"><strong>Rp35.000</strong><span> / 3 jam</span></p>
+                            <button class="select-button" type="button" aria-pressed="false"><span>Pilih sepeda</span><i data-lucide="arrow-up-right"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bike-card" data-category="kota">
+                    <div class="bike-photo photo-peach">
+                        <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1000&q=85" alt="Urban Single, sepeda ringan untuk berkeliling kota" loading="lazy">
+                        <span class="bike-number">02 / 03</span>
+                        <span class="photo-tag"><i data-lucide="building-2"></i> KOTA</span>
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-heading">
+                            <div><p class="bike-type">URBAN BIKE</p><h3>Urban Single</h3></div>
+                            <span class="bike-rating"><i data-lucide="star"></i> 4.8</span>
+                        </div>
+                        <p class="bike-description">Ringan dan gesit untuk berpindah dari satu sudut kota ke sudut lainnya.</p>
+                        <div class="bike-specs"><span><i data-lucide="gauge"></i> Single speed</span><span><i data-lucide="zap"></i> Ringan</span></div>
+                        <div class="bike-footer">
+                            <p class="bike-price"><strong>Rp30.000</strong><span> / 3 jam</span></p>
+                            <button class="select-button" type="button" aria-pressed="false"><span>Pilih sepeda</span><i data-lucide="arrow-up-right"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bike-card" data-category="sport">
+                    <div class="bike-photo photo-blue">
+                        <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=1000&q=85" alt="Trail Explorer, sepeda hybrid untuk rute yang lebih jauh" loading="lazy">
+                        <span class="bike-number">03 / 03</span>
+                        <span class="photo-tag"><i data-lucide="mountain"></i> SPORT</span>
+                    </div>
+                    <div class="bike-info">
+                        <div class="bike-heading">
+                            <div><p class="bike-type">HYBRID BIKE</p><h3>Trail Explorer</h3></div>
+                            <span class="bike-rating"><i data-lucide="star"></i> 5.0</span>
+                        </div>
+                        <p class="bike-description">Siap untuk jarak lebih jauh dan jalur yang mengajakmu sedikit menantang diri.</p>
+                        <div class="bike-specs"><span><i data-lucide="gauge"></i> 21 kecepatan</span><span><i data-lucide="mountain"></i> Serbaguna</span></div>
+                        <div class="bike-footer">
+                            <p class="bike-price"><strong>Rp50.000</strong><span> / 3 jam</span></p>
+                            <button class="select-button" type="button" aria-pressed="false"><span>Pilih sepeda</span><i data-lucide="arrow-up-right"></i></button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <p class="selection-status" id="selection-status" role="status" aria-live="polite">Pilih satu sepeda untuk melihat pilihanmu.</p>
+        </section>
+
+        <section class="catalog-note" aria-label="Informasi sewa">
+            <i data-lucide="info"></i>
+            <p><strong>Semua sudah termasuk helm.</strong> Tarif awal berlaku untuk 3 jam sewa.</p>
+            <a href="index.html#cara-sewa">Cara sewa <i data-lucide="arrow-up-right"></i></a>
+        </section>
+    </main>
+
+    <footer class="site-footer page-shell">
+        <a class="brand footer-brand" href="index.html" aria-label="PedalPOP, beranda">
+            <img class="brand-logo" src="img/logo.png" alt="">
+            <span class="brand-name">Pedal<span>POP</span></span>
+        </a>
+        <p>Lebih banyak gowes, lebih banyak cerita.</p>
+        <span class="footer-copy">© 2026 PedalPOP</span>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        const menuBackdrop = document.querySelector('.menu-backdrop');
+        const closeMenu = () => {
+            const wasOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', 'false');
+            mainNav.classList.remove('is-open');
+            if (wasOpen) {
+                mainNav.classList.add('is-closing');
+                menuBackdrop.classList.remove('is-visible');
+                menuBackdrop.classList.add('is-closing');
+            }
+        };
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+            if (isOpen) {
+                closeMenu();
+                return;
+            }
+
+            mainNav.classList.remove('is-closing');
+            menuBackdrop.hidden = false;
+            menuBackdrop.classList.remove('is-closing');
+            menuBackdrop.classList.add('is-visible');
+            document.documentElement.classList.add('menu-open');
+            document.body.classList.add('menu-open');
+            menuToggle.setAttribute('aria-expanded', 'true');
+            mainNav.classList.add('is-open');
+        });
+        mainNav.addEventListener('animationend', (event) => {
+            if (event.animationName === 'menu-disappear') {
+                mainNav.classList.remove('is-closing');
+            }
+        });
+        menuBackdrop.addEventListener('click', closeMenu);
+        menuBackdrop.addEventListener('animationend', (event) => {
+            if (event.animationName === 'backdrop-disappear') {
+                menuBackdrop.hidden = true;
+                menuBackdrop.classList.remove('is-closing');
+                document.documentElement.classList.remove('menu-open');
+                document.body.classList.remove('menu-open');
+            }
+        });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
+                closeMenu();
+            }
+        });
+        mainNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+            closeMenu();
+        }));
+
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const bikeCards = document.querySelectorAll('.bike-card');
+        const selectionStatus = document.querySelector('#selection-status');
+
+        filterButtons.forEach((button) => button.addEventListener('click', () => {
+            const category = button.dataset.filter;
+            filterButtons.forEach((filter) => {
+                const isActive = filter === button;
+                filter.classList.toggle('is-active', isActive);
+                filter.setAttribute('aria-pressed', String(isActive));
+            });
+            bikeCards.forEach((card) => {
+                card.hidden = category !== 'semua' && card.dataset.category !== category;
+            });
+        }));
+
+        document.querySelectorAll('.select-button').forEach((button) => button.addEventListener('click', () => {
+            const selectedCard = button.closest('.bike-card');
+            const bikeName = selectedCard.querySelector('h3').textContent;
+            document.querySelectorAll('.select-button').forEach((otherButton) => {
+                const isSelected = otherButton === button;
+                otherButton.setAttribute('aria-pressed', String(isSelected));
+                otherButton.querySelector('span').textContent = isSelected ? 'Dipilih' : 'Pilih sepeda';
+                otherButton.closest('.bike-card').classList.toggle('is-selected', isSelected);
+            });
+            selectionStatus.textContent = `${bikeName} siap menemani perjalananmu.`;
+        }));
+    </script>
+</body>
+
+</html>
