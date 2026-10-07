@@ -6,7 +6,7 @@
     --ink: #10244a;
     --muted: #68748b;
     --paper: #f8faf3;
-    --white: #fff;
+    --white: #ffffff;
     --line: #e3e7d9;
     --heading: "Manrope", sans-serif;
     --body: "DM Sans", sans-serif;
@@ -59,7 +59,7 @@ a:focus-visible {
     justify-content: space-between;
     gap: 32px;
     padding-inline: max(32px, calc((100% - 1280px) / 2));
-    background: var(--paper);
+    background: var(--white);
     border-bottom: 1px solid var(--line);
 }
 
@@ -717,7 +717,7 @@ a:focus-visible {
         align-items: stretch;
         gap: 0;
         padding: 8px 14px;
-        background: var(--paper);
+        background: var(--white);
         border: 1px solid var(--line);
         border-radius: 0 0 6px 6px;
         box-shadow: 0 12px 24px #08245e12;
